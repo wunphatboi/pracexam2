@@ -27,7 +27,12 @@ currNode = currNode->link;
 }
 }
 bool LinkedList::swap(int pos1, int pos2) {
+    Node* curr = head;
+    find_and_delete(pos1);
+    return true;
 }
+
+
 bool LinkedList::find_and_delete(int target) {
     Node* curr = head;
     int pos = 1;
@@ -41,6 +46,4 @@ bool LinkedList::find_and_delete(int target) {
 }
 return false;
 }
-
-
 
